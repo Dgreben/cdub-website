@@ -26,10 +26,10 @@
 }
 
 .dropdown-menu a {
-    font-size: 15px;
-    font-family: Helvetica;
+    font-size: 16px;
+    font-family: Montserrat;
     text-align: center;
-    font-weight: bold;
+
 }
 .dropdown-menu > a,
 .dropdown-menu > a:hover
@@ -44,17 +44,18 @@
     font-family: Montserrat;
     margin-top: 50px;
     text-align: center;
-    border-bottom: 3px dotted white;
+    border-bottom: 3px solid white;
     padding-bottom: 10px;
 }
+
 .team-page .player-box {
     background-color: black;
     height: 600px;
     margin-top: 90px;
-    opacity: .8;
     border: 3px solid white;
     z-level: 1;
 }
+
 .team-page p {
     color: white;
     font-family: Montserrat;
@@ -65,17 +66,22 @@
     padding-top: 20px;
     font-size: 20px;
 }
+
 .team-page .player-nicknames {
     text-align: center;
     font-size: 35px;
     position: relative;
-        bottom: 20px;
+    bottom: 20px;
+    color: orange;
+    left: 2px;
 }
+
 .team-page .player-names {
     text-align: center;
     font-size: 20px;
     position: relative;
     bottom: 40px;
+
 }
 .team-page .player-bios {
     text-align: left;
@@ -85,7 +91,57 @@
 }
 .team-page img {
     z-level: 2;
+
 }
+
+.team-page a {
+    position: relative;
+}
+.twitch-icon {
+    right: 5px;
+    bottom: 1px;
+}
+
+.twitter-icon {
+    left: 2px;
+    bottom: 2px;
+}
+#doubleking-picture {
+    position: relative;
+    bottom: 28px;
+    left: 50px;
+}
+
+#mark-picture {
+    position: relative;
+    bottom: -2px;
+    left: 55px;
+}
+
+#luis-picture {
+    position: relative;
+    bottom: 38px;
+    left: 48px;
+}
+
+#afromoush-picture {
+    position: relative;
+    bottom: 58px;
+    right: 48px;
+}
+
+#sanctified-picture {
+    position: relative;
+    bottom: -13px;
+    left: 45px;
+}
+
+.team-page a img:hover {
+    transform: scale(1.3);
+    transition: all .3s ease-in-out;
+
+}
+
 footer {
     background-color: #383636;
     height: 42px;
@@ -112,7 +168,7 @@ footer p {
     color: white;
     display: inline-block;
     position: relative;
-    top: 6px;
+    top: 9px;
     left: 1275px;
 }
 
