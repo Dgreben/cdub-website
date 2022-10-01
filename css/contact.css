@@ -5,13 +5,22 @@
 }
 
 .navbar .navbar-brand {
-    margin-left: 40px;
+    position: relative;
+    left: 1%;
     font-family: Helvetica;
     font-weight: bold;
     font-size: 25px;
 }
 .navbar a {
     color: white;
+}
+
+.navbar button {
+    background-color: #383636;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid white;
 }
 
 .navbar li {
@@ -37,9 +46,9 @@
     color: black;
 }
 .contact-page {
-    height: 900px;
+    min-height: 900px;
     background: linear-gradient(black, orange);
-    width: 100%;
+    overflow: hidden;
 }
 .contact-page h1 {
     color: white;
@@ -56,20 +65,20 @@
     font-family: Montserrat;
     font-size: 30px;
     position: relative;
-    left: 25px;
+    text-align: center;
+
 }
 .contact-page-blurb img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 label {
     color: white;
     font-family: Helvetica;
     font-size: 17px;
     position: relative;
-    right: 30px;
     font-weight: bold;
 }
 
@@ -89,15 +98,16 @@ input[type=text], select, textarea {
     margin-top: 3px;
     margin-bottom: 15px;
     position: relative;
-    right: 35px;
+
 }
 
 input[type=submit] {
     position: relative;
-    right: 35px;
     cursor: pointer;
     font-family: Montserrat;
-
+    display: block;
+    margin: 0 auto;
+    width: 80px;
 }
 
 footer {
@@ -125,9 +135,10 @@ footer a img:hover {
 footer p {
     color: white;
     display: inline-block;
+    float: right;
     position: relative;
-    top: 9px;
-    left: 1275px;
+    top: 25%;
+    margin-right: 15px;
 }
 
 #twitter-footer {
@@ -151,4 +162,26 @@ footer p {
     top: 5px;
 
 
+}
+
+@media (max-width: 767.99px) {
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .navbar-collapse {
+        background-color: black;
+        opacity: .9;
+        text-align: center;
+        padding-bottom: 15px;
+        z-index: 2;
+    }
+    .navbar li {
+        margin-top: 15px;
+    }
+    input[type=submit] {
+        margin-bottom: 15px;
+    }
 }

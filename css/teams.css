@@ -5,13 +5,22 @@
 }
 
 .navbar .navbar-brand {
-    margin-left: 40px;
+    position: relative;
+    left: 1%;
     font-family: Helvetica;
     font-weight: bold;
     font-size: 25px;
 }
 .navbar a {
     color: white;
+}
+
+.navbar button {
+    background-color: #383636;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid white;
 }
 
 .navbar li {
@@ -37,7 +46,9 @@
     color: black;
 }
 .team-page {
-    height: 900px;
+    min-height: 900px;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 .team-page h1 {
     color: white;
@@ -50,10 +61,11 @@
 
 .team-page .player-box {
     background-color: black;
-    height: 600px;
+    min-height: 600px;
+    min-width: 325px;
     margin-top: 90px;
     border: 3px solid white;
-    z-level: 1;
+
 }
 
 .team-page p {
@@ -89,14 +101,21 @@
     position: relative;
     bottom: 40px;
 }
-.team-page img {
-    z-level: 2;
+
+.player-pictures {
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
 }
 
 .team-page a {
     position: relative;
 }
+
 .twitch-icon {
     right: 5px;
     bottom: 1px;
@@ -106,35 +125,7 @@
     left: 2px;
     bottom: 2px;
 }
-#doubleking-picture {
-    position: relative;
-    bottom: 28px;
-    left: 50px;
-}
 
-#mark-picture {
-    position: relative;
-    bottom: -2px;
-    left: 55px;
-}
-
-#luis-picture {
-    position: relative;
-    bottom: 38px;
-    left: 48px;
-}
-
-#afromoush-picture {
-    position: relative;
-    bottom: 58px;
-    right: 48px;
-}
-
-#sanctified-picture {
-    position: relative;
-    bottom: -13px;
-    left: 45px;
-}
 
 .team-page a img:hover {
     transform: scale(1.3);
@@ -167,9 +158,11 @@ footer a img:hover {
 footer p {
     color: white;
     display: inline-block;
+    float: right;
     position: relative;
-    top: 9px;
-    left: 1275px;
+    top: 25%;
+    margin-right: 15px;
+
 }
 
 #twitter-footer {
@@ -193,4 +186,27 @@ footer p {
     top: 5px;
 
 
+}
+
+@media (max-width: 767.99px) {
+    .team-page .player-box {
+        max-width: 200px;
+
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .navbar-collapse {
+        background-color: black;
+        opacity: .9;
+        text-align: center;
+        padding-bottom: 15px;
+        z-index: 2;
+    }
+    .navbar li {
+        margin-top: 15px;
+    }
 }

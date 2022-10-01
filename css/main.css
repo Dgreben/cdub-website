@@ -5,13 +5,22 @@
 }
 
 .navbar .navbar-brand {
-    margin-left: 40px;
+    position: relative;
+    left: 1%;
     font-family: Helvetica;
     font-weight: bold;
     font-size: 25px;
 }
 .navbar a {
     color: white;
+}
+
+.navbar button {
+    background-color: #383636;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid white;
 }
 
 .navbar li {
@@ -38,88 +47,98 @@
 }
 
 .cdub-splash {
-    height: 900px;
+    min-height: 900px;
     background: linear-gradient(to left top, black, orange);
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .cdub-splash img {
-    z-level: 1;
     position: relative;
+    margin: auto;
+    display: block;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .cdub-splash h1 {
-    color: white;
     font-family: Montserrat;
     color: white;
-    font-weight: margin-top: 50px;;
     font-size: 80px;
     text-decoration-thickness: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .initial-splash {
-    height: 1100px;
+    min-height: 1100px;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .initial-splash p {
-    color: white;
+    color: #ffba0a;
     text-align: center;
     font-family: Montserrat;
-    font-size:35px;
-    margin-top: 25px;
+    font-size: 35px;
+
 }
 
 .initial-splash span {
-    color: white;
+    color: #ffba0a;
     text-align: center;
     font-family: Montserrat;
     font-size: 33px;
-    border-bottom: 2px solid;
-    padding-bottom: 15px;
+
 }
 
 .initial-splash h1 {
-    color: #fab505;
+    color: #ffba0a;
     text-align: center;
-    margin-top: 700px;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 70px;
-    border-bottom: 4px solid;
+    text-decoration: underline;
 }
+.initial-splash-content {
+    background-color: black;
+    opacity: .8;
+    border-radius: 25px;
+    margin-top: 23.5%;
+    padding-bottom: 15px;
+    min-width: 350px;
 
+}
 .initial-splash a {
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 130px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
 }
 
-#twitter-splash {
-    margin-left: 85px;
-}
-
-#instagram-splash {
-    position: relative;
-    bottom: 1px;
-}
-
-#youtube-splash {
-    position: relative;
-    bottom: 1px;
-}
-
-#tiktok-splash {
-    position: relative;
-    bottom: 1px;
-}
-
-.initial-splash a:hover {
+.initial-splash img:hover {
     transform: scale(1.5);
     transition: all .3s ease-in-out;
 }
 
+#discord-splash {
+    position: relative;
+    top: 3px;
+}
+
+#youtube-splash {
+    position: relative;
+    top: 2px;
+}
 .partner-post-splash {
-    height: 900px;
+    min-height: 950px;
     background: linear-gradient(.25turn, black, grey);
+    overflow: hidden;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 .partner-post-splash a:hover {
@@ -145,7 +164,7 @@
     font-family: Montserrat;
     font-size:33px;
     padding: 10px;
-    border-radius: 25px;
+
 }
 
 .partner-post-splash p a {
@@ -154,23 +173,30 @@
 }
 
 #partner-post-splash-p2 {
-    margin-left: 100px;
+    position: relative;
+    margin-left: 10%;
+
 }
 
 #partner-post-splash-p3 {
-    margin-left: 100px;
+    position: relative;
+    margin-left: 10%;
+
 }
 
-#sponsor-table {
+.partner-post-splash img {
     position: relative;
-    left: 100px;
-    top: 10px;
+    margin: auto;
+    display: block;
+    margin-left: 10%;
+    max-width: 90%;
+    height: auto;
 }
 
 #jersey-model {
-    position: relative;
-    top: 50px;
-    left: 135px;
+    top: 30px;
+    margin-left: 15%;
+
 }
 
 footer {
@@ -198,9 +224,10 @@ footer a img:hover {
 footer p {
     color: white;
     display: inline-block;
+    float: right;
     position: relative;
-    top: 9px;
-    left: 1275px;
+    top: 25%;
+    margin-right: 15px;
 }
 
 #twitter-footer {
@@ -222,4 +249,26 @@ footer p {
 #tiktok-footer {
     position: relative;
     top: 5px;
+}
+
+@media (max-width: 767.99px) {
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .navbar-collapse {
+        background-color: black;
+        opacity: .9;
+        text-align: center;
+        padding-bottom: 15px;
+        z-index: 2;
+    }
+    .navbar li {
+        margin-top: 15px;
+    }
+    #jersey-model {
+        margin-left: 5%;
+    }
 }

@@ -5,13 +5,22 @@
 }
 
 .navbar .navbar-brand {
-    margin-left: 40px;
+    position: relative;
+    left: 1%;
     font-family: Helvetica;
     font-weight: bold;
     font-size: 25px;
 }
 .navbar a {
     color: white;
+}
+
+.navbar button {
+    background-color: #383636;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid white;
 }
 
 .navbar li {
@@ -37,9 +46,9 @@
 }
 
 .news-page {
-    height: 1200px;
+    min-height: 1200px;
     background: linear-gradient(black, orange);
-    width: 100%;
+    overflow: hidden:
 }
 #page-title {
     color: white;
@@ -54,14 +63,14 @@
 .news-pieces h1 {
     color: white;
     font-family: Montserrat;
-    margin-top: 125px;
-    margin-left: 76px;
+    margin-top: 10%;
+    margin-left: 7%;
     border-bottom: 1px solid white;
 }
 .news-pieces p {
     color: white;
     font-family: Montserrat;
-    margin-left: 76px;
+    margin-left: 7%;
     font-size: 22px;
     text-indent: 2em;
     margin-top: 20px;
@@ -75,7 +84,7 @@
 }
 .news-pieces a img {
     position: relative;
-    left: 20px;
+    margin-left: 1%;
     bottom: 5px;
 }
 
@@ -110,9 +119,10 @@ footer a img:hover {
 footer p {
     color: white;
     display: inline-block;
+    float: right;
     position: relative;
-    top: 9px;
-    left: 1275px;
+    top: 25%;
+    margin-right: 15px;
 }
 
 #twitter-footer {
@@ -136,4 +146,23 @@ footer p {
     top: 5px;
 
 
+}
+
+@media (max-width: 767.99px) {
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 991.99px) {
+    .navbar-collapse {
+        background-color: black;
+        opacity: .9;
+        text-align: center;
+        padding-bottom: 15px;
+        z-index: 2;
+    }
+    .navbar li {
+        margin-top: 15px;
+    }
 }
