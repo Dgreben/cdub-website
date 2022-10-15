@@ -53,6 +53,10 @@
     background-attachment: fixed;
 }
 
+.cdub-splash-content {
+    display: none;
+}
+
 .cdub-splash img {
     position: relative;
     margin: auto;
@@ -61,12 +65,13 @@
     right: 0;
     max-width: 100%;
     height: auto;
+
 }
 
 .cdub-splash h1 {
     font-family: Montserrat;
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     text-decoration-thickness: 3px;
     text-align: center;
     display: flex;
@@ -77,35 +82,36 @@
     min-height: 1100px;
     overflow: hidden;
     background-attachment: fixed;
+    background: linear-gradient(to left bottom, black, orange);
 }
 
 .initial-splash p {
     color: #ffba0a;
     text-align: center;
-    font-family: Montserrat;
-    font-size: 35px;
+    font-family: Helvetica;
+    font-size: 30px;
 
 }
 
 .initial-splash span {
     color: #ffba0a;
     text-align: center;
-    font-family: Montserrat;
-    font-size: 33px;
+    font-family: Helvetica;
+    font-size: 30px;
 
 }
 
 .initial-splash h1 {
     color: #ffba0a;
     text-align: center;
-    font-family: Montserrat;
+    font-family: Helvetica;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 65px;
     text-decoration: underline;
 }
 .initial-splash-content {
     background-color: black;
-    opacity: .8;
+    opacity: .9;
     border-radius: 25px;
     margin-top: 23.5%;
     padding-bottom: 15px;
@@ -116,12 +122,12 @@
     display: flex;
     justify-content: center;
     margin-top: 10%;
-
 }
 
 .initial-splash img:hover {
     transform: scale(1.5);
     transition: all .3s ease-in-out;
+
 }
 
 #discord-splash {
@@ -134,7 +140,7 @@
     top: 2px;
 }
 .partner-post-splash {
-    min-height: 950px;
+    min-height: 850px;
     background: linear-gradient(.25turn, black, grey);
     overflow: hidden;
     background-attachment: fixed;
@@ -146,7 +152,8 @@
 }
 
 .partner-post-splash h1 {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 5%;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -154,13 +161,13 @@
     font-size: 45px;
     padding: 10px;
     border-bottom: 3px solid white;
-
 }
 
 .partner-post-splash p {
     margin-top: 30px;
     color: white;
     text-align: left;
+    text-indent: 2em;
     font-family: Montserrat;
     font-size:33px;
     padding: 10px;
@@ -194,9 +201,9 @@
 }
 
 #jersey-model {
-    top: 30px;
+    top: 10%;
     margin-left: 15%;
-
+    margin-bottom: 5%;
 }
 
 footer {

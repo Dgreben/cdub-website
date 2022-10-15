@@ -46,19 +46,173 @@
 }
 
 .partners-page {
-    height: 1200px;
-    background: linear-gradient(black, orange);
-    width: 100%;
+    min-height: 1000px;
+    background: linear-gradient(orange, black);
+    overflow: hidden;
+}
+
+.intro-content {
+    min-width: 400px
 }
 .partners-page h1 {
     color: white;
-    margin-top: 70px;
+    margin-top: 4%;
     font-family: Montserrat;
     text-align: center;
     border: 1px solid white;
     font-weight: bold;
     padding: 15px;
+    background: linear-gradient(black, grey);
 }
+
+.partners-page p {
+    color: white;
+    margin-top: 15%;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 30px;
+    display: none;
+}
+
+.why-esports {
+    min-height: 1100px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.why-esports p {
+    color: white;
+    font-family: Montserrat;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-indent: 2em;
+}
+
+.why-esports h1 {
+    color: white;
+    margin-top: 4%;
+    font-family: Montserrat;
+    text-align: center;
+    border: 1px solid white;
+    font-weight: bold;
+    padding: 15px;
+    background: linear-gradient(black, grey);
+}
+
+.why-esports img {
+    display: block;
+    margin: auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 5%;
+    height: auto;
+    max-width: 100%;
+}
+
+#esports-img-2 {
+    top: 7%;
+}
+
+.why-us {
+    min-height: 1100px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.why-us p {
+    color: white;
+    font-family: Montserrat;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-right: 10%;
+    text-indent: 2em;
+}
+
+.why-us h1 {
+    color: white;
+    margin-top: 4%;
+    font-family: Montserrat;
+    text-align: center;
+    border: 1px solid white;
+    font-weight: bold;
+    padding: 15px;
+    background: linear-gradient(black, grey);
+}
+
+.why-us img {
+    display: block;
+    margin: auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 8%;
+    height: auto;
+    max-width: 100%;
+}
+
+.offer {
+    min-height: 1100px;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+
+.offer p {
+    color: white;
+    font-family: Montserrat;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-indent: 2em;
+}
+.offer h1 {
+    color: white;
+    margin-top: 4%;
+    font-family: Montserrat;
+    text-align: center;
+    border: 1px solid white;
+    font-weight: bold;
+    padding: 15px;
+    background: linear-gradient(black, grey);
+}
+
+.offer a {
+    margin-top: 3%;
+    padding-bottom: 1%;
+}
+
+.offer a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+.offer img {
+    display: block;
+    margin-left: 10%;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 8%;
+    height: auto;
+    max-width: 100%;
+}
+
+#logo-img {
+   top: 3%;
+}
+
 footer {
     background-color: #383636;
     height: 42px;
@@ -129,5 +283,14 @@ footer p {
     }
     .navbar li {
         margin-top: 15px;
+    }
+
+    #esports-img-2 {
+        padding-bottom: 5%;
+    }
+
+    .offer img {
+        margin: auto;
+        padding-bottom: 1%;
     }
 }

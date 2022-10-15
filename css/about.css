@@ -44,14 +44,16 @@
 .dropdown-menu > a:focus {
     color: black;
 }
+
 .about-page {
-    height: 1200px;
+    min-height: 1000px;
     background: linear-gradient(black, orange);
-    width: 100%;
+    overflow: hidden;
 }
-.about-page h1 {
+
+#page-title {
     color: white;
-    margin-top: 70px;
+    margin-top: 4%;
     font-family: Montserrat;
     text-align: center;
     border: 1px solid white;
@@ -59,6 +61,56 @@
     padding: 15px;
 }
 
+.about-content {
+    display: none;
+}
+.about-content p {
+    color: white;
+    font-family: Montserrat;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-indent: 2em;
+}
+
+.about-content-2 {
+    display: none;
+}
+
+.about-content-2 p {
+    color: white;
+    font-family: Montserrat;
+    text-align: left;
+    text-indent: 2em;
+    font-size: 28px;
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.about-content img {
+    display: block;
+    margin: auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 5%;
+    height: auto;
+    max-width: 100%;
+}
+
+.about-content-2 img {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    right: 0;
+    left: 0;
+    height: auto;
+    max-width: 100%;
+}
 footer {
     background-color: #383636;
     height: 42px;
