@@ -76,6 +76,7 @@
 .podcast-page img {
     height: auto;
     max-width: 100%;
+    min-width: 300px;
     margin-bottom: 5%;
     margin-top: 3%;
 }
@@ -109,7 +110,6 @@
 
 .content-column-2 a {
     display: flex;
-    max-width: 400px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -172,6 +172,54 @@ footer p {
     top: 5px;
 
 
+}
+
+@media (max-width: 475px) {
+    .content-column-2 h1 {
+        min-width: 330px;
+    }
+    .content-column-1 {
+        min-width: 370px;
+    }
+    footer a {
+        padding-right: 0px;
+    }
+    footer p {
+        margin-right: 0px;
+    }
+    #twitter-footer {
+        margin-left: 3px;
+    }
+    #discord-footer {
+        top: 5px;
+    }
+    #instagram-footer {
+        position: relative;
+        top: 5px;
+    }
+    #youtube-footer {
+        padding-right: 0px;
+    }
+    #twitter-footer img {
+        width: 18px;
+        height: 18px;
+    }
+    #discord-footer img {
+        width: 22px;
+        height: 14px;
+    }
+    #instagram-footer img {
+        width: 22px;
+        height: 19px;
+    }
+    #youtube-footer img {
+        width: 24px;
+        height: 16px;
+    }
+    #tiktok-footer img {
+        width: 17px;
+        height: 19px;
+    }
 }
 
 @media (max-width: 767.99px) {
