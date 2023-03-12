@@ -259,6 +259,15 @@ footer p {
 }
 
 @media (max-width: 475px) {
+    #partner-post-splash-p2 {
+        margin-left: 2%;
+    }
+    #partner-post-splash-p3 {
+        margin-left: 2%;
+    }
+    .partner-post-splash img {
+        margin-left: 2%;
+    }
     footer a {
         padding-right: 0px;
     }
